@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh.Blog</title>
+    <link rel="shortcut icon" href="assets/db.png" type="image/x-icon">
+
+    <!-- Link Css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class=" lg:sticky top-0  bg-[#aaf5ff]  lg:mx-10 rounded-[50px]">
+        <nav
+            class="flex justify-between items-center px-3 lg:px-10 py-2 lg:py-4 mt-2 font-bold lg:text-lg bg-[#acacac00] bg-tal-100 ">
+
+            <!--                                Home                          -->
+
+            <a href="./Index.html">
+                <button class="btn bg-teal-500 lg:bg-[#1babff] w-fit rounded-full lg:rounded-3xl lg:w-28 lg:text-lg ">Home</button>
+            </a>
+
+            <!--                               logo                              -->
+
+            <div class="lg:flex justify-between items-center gap-3 text-center">
+                <img class="mx-auto " src="./assets/logo.png" alt="">
+                <h1 class="hidden lg:block text-3xl">Donate <span class="text-green-600"> Ban<span
+                            class="text-red-500">gla</span>desh</span></h1>
+                <h1 class="lg:hidden ">Donate BD.</h1>
+            </div>
+
+            <!--                              Money                              -->
+
+            <div class="lg:flex justify-between items-center gap-3">
+                <img class="mx-auto" src="./assets/coin.png" alt="">
+                <h1 class="text-zinc-500"> <span>5500</span> BDT</h1>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="my-4">
+
+        <div class=" mx-auto flex items-center  gap-2 justify-center bg-red-200 px-4 py-2 rounded-3xl w-fit">
+            <img src="./assets/fq.png" alt="">
+            <h1 class="text-3xl font-bold text-center">Important F&Q</h1>
+            <img src="./assets/fq.png" alt="">
+        </div>
+
+
+
+
+        <!--  ------------------------------- Q&A -------------------------------->
+        <section class="mt-8 lg:mx-36 border bg-slate-50 border-emerald-400 p-6 rounded-3xl">
+
+            <div style="border-left: 10px rgb(0, 140, 255) solid ;" 
+            class="collapse collapse-arrow bg-blue-200 my-3 ">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium"> 1. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="font-serif italic">
+                        The Document Object Model (DOM) is the data representation of the objects <br>that comprise the
+                        structure and content of a document on the web.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div style="border-left: 10px rgb(0, 255, 128) solid ;"  class="collapse collapse-arrow bg-green-200 my-3">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    2. How do you select an element from the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p class="font-serif italic">
+                        To select an element from the DOM I can follow this; <br>
+                        After understanding the DOM as an Object Hierarchy, I can
+                        use an ID to Select an Element with .getElementById() or <br>
+                        use Class to Select Elements with .getElementByClass() or <br>
+                        Use a CSS Selector to Select an Element with .querySelector().
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div style="border-left: 10px rgb(255, 0, 21) solid ;"  class="collapse collapse-arrow bg-red-200 my-3">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    3. What is event delegation in the context of the DOM, and why is it useful?
+                </div>
+                <div class="collapse-content">
+                    <p class="font-serif italic">
+                        Event delegation refers to the process of using event propagation (bubbling) to handle events at <br>
+                        a higher level in the DOM than the element on which the event originated. It allows us to attach <br>
+                        a single event listener for elements that exist now or in the future.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div style="border-left: 10px rgb(255, 81, 0) solid ;"  class="collapse collapse-arrow bg-orange-200 my-3">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    4. How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p class="font-serif italic">
+                        Manipulating Element Attributes:
+                        If you want to change other attributes like id , href , or src , you can use the setAttribute()
+                        method. The setAttribute() method accepts two arguments: The name of the attribute to set. The
+                        value of the attribute to set. </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+       <!--                   footer                  -->
+       <footer class="h-14 bg-gray-200">
+
+       </footer>
+   
+
+</body>
+
+</html>

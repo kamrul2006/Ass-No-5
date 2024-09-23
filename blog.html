@@ -23,12 +23,13 @@
 
     <header class=" lg:sticky top-0  bg-[#aaf5ff]  lg:mx-10 rounded-[50px]">
         <nav
-            class="flex justify-between items-center px-3 lg:px-10 py-2 lg:py-4 mt-2 font-bold lg:text-lg bg-[#acacac00] bg-tal-100 ">
+            class="flex justify-between items-center px-4 lg:px-10 py-1 lg:py-4 mt-2 font-bold lg:text-lg bg-[#acacac00] bg-tal-100 ">
 
             <!--                                Home                          -->
 
             <a href="./index.html">
-                <button class="btn bg-teal-500 lg:bg-[#1babff] w-fit rounded-full lg:rounded-3xl lg:w-28 lg:text-lg ">Home</button>
+                <button
+                    class="btn bg-gradient-to-r rounded-full from-blue-600 to-purple-600 lg:w-28 lg:text-lg text-white ">Home</button>
             </a>
 
             <!--                               logo                              -->
@@ -53,23 +54,23 @@
     <main class="my-4">
 
         <div class=" mx-auto flex items-center  gap-2 justify-center bg-red-200 px-4 py-2 rounded-3xl w-fit">
-            <img src="./assets/fq.png" alt="">
-            <h1 class="text-3xl font-bold text-center">Important F&Q</h1>
-            <img src="./assets/fq.png" alt="">
+            <img class="w-7 lg:w-auto" src="./assets/fq.png" alt="">
+            <h1 class="lg:text-3xl text-lg font-bold text-center">Important F&Q</h1>
+            <img class="w-7 lg:w-auto" src="./assets/fq.png" alt="">
         </div>
 
 
 
 
         <!--  ------------------------------- Q&A -------------------------------->
-        <section class="mt-8 lg:mx-36 border bg-slate-50 border-emerald-400 p-6 rounded-3xl">
+        <section class="mt-8 mx-4 lg:mx-36 border bg-slate-50 border-emerald-400 p-6 rounded-3xl">
 
-            <div style="border-left: 10px rgb(0, 140, 255) solid ;" 
-            class="collapse collapse-arrow bg-blue-200 my-3 ">
+            <div style="border-left: 10px rgb(0, 140, 255) solid ;" class="collapse collapse-arrow bg-blue-200 my-3 ">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium"> 1. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title lg:text-xl font-medium"> 1. What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p class="font-serif italic">
+                    <hr><br>
+                    <p class="font-serif text-xs lg:text-base italic">
                         The Document Object Model (DOM) is the data representation of the objects <br>that comprise the
                         structure and content of a document on the web.
                     </p>
@@ -78,13 +79,15 @@
 
             <hr>
 
-            <div style="border-left: 10px rgb(0, 255, 128) solid ;"  class="collapse collapse-arrow bg-green-200 my-3">
+            <div style="border-left: 10px rgb(1, 207, 18) solid ;" class="collapse collapse-arrow bg-green-200 my-3">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">
+                <div class="collapse-title lg:text-xl font-medium">
                     2. How do you select an element from the DOM?
                 </div>
                 <div class="collapse-content">
-                    <p class="font-serif italic">
+                    <hr><br>
+
+                    <p class="font-serif text-xs lg:text-base italic">
                         To select an element from the DOM I can follow this; <br>
                         After understanding the DOM as an Object Hierarchy, I can
                         use an ID to Select an Element with .getElementById() or <br>
@@ -96,15 +99,19 @@
 
             <hr>
 
-            <div style="border-left: 10px rgb(255, 0, 21) solid ;"  class="collapse collapse-arrow bg-red-200 my-3">
+            <div style="border-left: 10px rgb(255, 0, 21) solid ;" class="collapse collapse-arrow bg-red-200 my-3">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">
+                <div class="collapse-title lg:text-xl font-medium">
                     3. What is event delegation in the context of the DOM, and why is it useful?
                 </div>
                 <div class="collapse-content">
-                    <p class="font-serif italic">
-                        Event delegation refers to the process of using event propagation (bubbling) to handle events at <br>
-                        a higher level in the DOM than the element on which the event originated. It allows us to attach <br>
+                    <hr><br>
+
+                    <p class="font-serif text-xs lg:text-base italic">
+                        Event delegation refers to the process of using event propagation (bubbling) to handle events at
+                        <br>
+                        a higher level in the DOM than the element on which the event originated. It allows us to attach
+                        <br>
                         a single event listener for elements that exist now or in the future.
                     </p>
                 </div>
@@ -112,13 +119,15 @@
 
             <hr>
 
-            <div style="border-left: 10px rgb(255, 81, 0) solid ;"  class="collapse collapse-arrow bg-orange-200 my-3">
+            <div style="border-left: 10px rgb(255, 81, 0) solid ;" class="collapse collapse-arrow bg-orange-200 my-3">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">
+                <div class="collapse-title lg:text-xl font-medium">
                     4. How do you manipulate an element's attributes and styles using the DOM?
                 </div>
                 <div class="collapse-content">
-                    <p class="font-serif italic">
+                    <hr><br>
+
+                    <p class="font-serif text-xs lg:text-base italic">
                         Manipulating Element Attributes:
                         If you want to change other attributes like id , href , or src , you can use the setAttribute()
                         method. The setAttribute() method accepts two arguments: The name of the attribute to set. The
@@ -130,11 +139,11 @@
 
     </main>
 
-       <!--                   footer                  -->
-       <footer class="h-14 bg-gray-200">
+    <!--                   footer                  -->
+    <footer class="h-14 bg-gray-200">
 
-       </footer>
-   
+    </footer>
+
 
 </body>
 

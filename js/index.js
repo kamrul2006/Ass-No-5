@@ -18,23 +18,25 @@ DonetNoakhali.addEventListener('click', function (event) {
         return;
     }
 
-    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
-
+    else if (moneyToAdd <= My_Money) {
+        console.log('hello')
         // get the current ball:
 
         const nb = GetText('NoaMoney')
         const Noa_Money = parseFloat(nb)
 
+        const My_Money = GetPFText('MyMoney')
 
         // add total amount:
         const NewBall = My_Money - moneyToAdd
         const NoaBall = Noa_Money + moneyToAdd
+        console.log(NoaBall)
 
         // Update ball:
         document.getElementById('MyMoney').innerText = NewBall
         document.getElementById('NoaMoney').innerText = NoaBall
 
-
+        document.getElementById('my_modal_5').showModal();
     }
 
     else if (moneyToAdd > My_Money) {
@@ -45,9 +47,9 @@ DonetNoakhali.addEventListener('click', function (event) {
     const time = new Date();
     const div = document.createElement('div');
     div.innerHTML = `
-                <div class=" border border-orange-300 p-8 rounded-xl  mt-4">
+                <div class=" border border-orange-300 p-3 lg:p-6 rounded-xl  mt-4">
                           
-                <h1 class="text-[20px] font-bold mt-4"> ${moneyToAdd} Taka is Donated for Noakhali, Bangladesh.</h1>
+                <h1 class="text-[20px] font-bold "> ${moneyToAdd} Taka is Donated for Noakhali, Bangladesh.</h1>
 
                 <p class="mt-4 text-[16px] text-gray-500 font-serif">
                  Date:  ${time}
@@ -69,7 +71,7 @@ DonetFeni.addEventListener('click', function (event) {
 
     // get money for donation ,
 
-    const moneyToAdd = GetPFValue('FeniInput');
+    const moneyToAdd = GetValue('FeniInput');
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -79,7 +81,7 @@ DonetFeni.addEventListener('click', function (event) {
         return;
     }
 
-    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
+    else if (moneyToAdd <= My_Money) {
 
         // get the current ball:
 
@@ -95,7 +97,7 @@ DonetFeni.addEventListener('click', function (event) {
         document.getElementById('MyMoney').innerText = NewBall
         document.getElementById('FeniMoney').innerText = FeniBall
 
-
+        document.getElementById('my_modal_5').showModal();
     }
 
     else if (moneyToAdd > My_Money) {
@@ -106,9 +108,9 @@ DonetFeni.addEventListener('click', function (event) {
     const time = new Date();
     const div = document.createElement('div');
     div.innerHTML = `
-                <div class=" border border-green-300 p-8 rounded-xl  mt-4">
+                <div class=" border border-green-300  p-3 lg:p-6 rounded-xl  mt-4">
                           
-                <h1 class="text-[20px] font-bold mt-4"> ${moneyToAdd} Taka is Donated for Feni , Bangladesh.</h1>
+                <h1 class="text-[20px] font-bold "> ${moneyToAdd} Taka is Donated for Feni , Bangladesh.</h1>
 
                 <p class="mt-4 text-[16px] text-gray-500 font-serif">
                  Date:  ${time}
@@ -130,7 +132,7 @@ DonetQU.addEventListener('click', function (event) {
 
     // get money for donation ,
 
-    const moneyToAdd = GetPFValue('QInput');
+    const moneyToAdd = GetValue('QInput');
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -141,7 +143,7 @@ DonetQU.addEventListener('click', function (event) {
         return;
     }
 
-    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
+    else if (moneyToAdd <= My_Money) {
 
         // get the current ball:
 
@@ -157,7 +159,7 @@ DonetQU.addEventListener('click', function (event) {
         document.getElementById('MyMoney').innerText = NewBall
         document.getElementById('QMoney').innerText = QBall
 
-
+        document.getElementById('my_modal_5').showModal();
     }
 
     else if (moneyToAdd > My_Money) {
@@ -167,9 +169,9 @@ DonetQU.addEventListener('click', function (event) {
     const time = new Date();
     const div = document.createElement('div');
     div.innerHTML = `
-                <div class=" border border-red-300 p-8 rounded-xl  mt-4">
+                <div class=" border border-red-300  p-3 lg:p-6 rounded-xl  mt-4">
                           
-                <h1 class="text-[20px] font-bold mt-4"> ${moneyToAdd} Taka is Donated for Aid for Injured in the Quota Movement.</h1>
+                <h1 class="text-[20px] font-bold s"> ${moneyToAdd} Taka is Donated for Aid for Injured in the Quota Movement.</h1>
 
                 <p class="mt-4 text-[16px] text-gray-500 font-serif">
                  Date:  ${time}
@@ -190,7 +192,7 @@ DonetGaza.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const moneyToAdd = GetPFValue('GazaInput')
+    const moneyToAdd = GetValue('GazaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -200,7 +202,7 @@ DonetGaza.addEventListener('click', function (event) {
         return;
     }
 
-    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
+    else if (moneyToAdd <= My_Money) {
 
         // get the current ball:
 
@@ -216,7 +218,7 @@ DonetGaza.addEventListener('click', function (event) {
         document.getElementById('MyMoney').innerText = NewBall
         document.getElementById('GazaMoney').innerText = GazaBall
 
-
+        document.getElementById('my_modal_5').showModal();
     }
 
     else if (moneyToAdd > My_Money) {
@@ -227,9 +229,9 @@ DonetGaza.addEventListener('click', function (event) {
     const time = new Date();
     const div = document.createElement('div');
     div.innerHTML = `
-                <div class=" border border-blue-300 p-8 rounded-xl  mt-4">
+                <div class=" border border-blue-300 p-3 lg:p-6 rounded-xl  mt-4">
                           
-                <h1 class="text-[20px] font-bold mt-4"> ${moneyToAdd} Taka is Donated for Gaza .</h1>
+                <h1 class="text-[20px] font-bold "> ${moneyToAdd} Taka is Donated for Gaza .</h1>
 
                 <p class="mt-4 text-[16px] text-gray-500 font-serif">
                  Date:  ${time}
@@ -239,3 +241,4 @@ DonetGaza.addEventListener('click', function (event) {
 
     document.getElementById('History-Window').appendChild(div)
 })
+

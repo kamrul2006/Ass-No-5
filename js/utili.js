@@ -1,16 +1,17 @@
 
-
 function GetId(id) {
     const inputValue = document.getElementById(id);
     return inputValue;
 
 }
 
+
 function GetValue(id) {
     const inputValue = document.getElementById(id).value;
     return inputValue;
 
 }
+
 
 function GetPFValue(id) {
     const inputValue = document.getElementById(id).value;
@@ -25,6 +26,7 @@ function GetText(id) {
     return Text
 
 }
+
 
 function GetPFText(id) {
     const Text = document.getElementById(id).innerText

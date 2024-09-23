@@ -44,19 +44,19 @@
 
             <div class="lg:flex justify-between items-center gap-3">
                 <img class="mx-auto" src="./assets/coin.png" alt="">
-                <h1 class="text-zinc-500"> <span id="MyMoney">5000</span> BDT</h1>
+                <h1 class="text-zinc-500"> <span id="MyMoney">10000</span> BDT</h1>
             </div>
 
         </nav>
 
         <!-- Button s -->
 
-        <div class=" justify-center flex gap-5 mt-4 lg:mt-8">
+        <div class=" justify-center flex gap-3 lg:gap-10 mt-4 lg:mt-8">
 
             <button id="btn-donation"
                 class="btn bg-gradient-to-r from-blue-600 to-purple-600 lg:w-28 lg:text-lg text-white ">Donation</button>
 
-            <button id="btn-history" class="btn btn-active px-3  lg:px-10 lg:text-lg">History</button>
+            <button id="btn-history" class="btn btn-active px-3  lg:px-10 ">History</button>
         </div>
     </header>
 
@@ -270,24 +270,12 @@
         </section>
 
         <!--         ----------------------------------------------  Html for history -----------------------------------------------         -->
-        <section id="History-Window" class="hidden">
+        <section id="History-Window"
+            class="hidden rounded-3xl mt-28 border-x-8 border border-x-green-600 py-4 px-2 lg:px-8">
 
-            <div class=" border border-gray-100 p-3 lg:p-6 rounded-xl  mt-4"> <!-- headings -->
-                <h1 class="text-[20px] font-bold "> 100 Taka is Donated for famine-2024 at Feni, Bangladesh.</h1>
-
-                <p class="mt-4 text-[16px] text-gray-500 font-serif">
-                    Date : Sun Sep 22 2024 23:51:11 GMT +0600 (Bangladesh Standard Time)
-                </p>
-            </div>
-
-            <div class=" border border-gray-100 p-3 lg:p-6 rounded-xl  mt-4"> <!-- headings -->
-                <h1 class="text-[20px] font-bold"> 100 Taka is Donated for Aid for Injured in the Quota Movement.
-                </h1>
-
-                <p class="mt-4 text-[16px] text-gray-500 font-serif">
-                    Date : Sun Sep 22 2024 23:55:11 GMT +0600 (Bangladesh Standard Time)
-                </p>
-            </div>
+            <h1
+                class="lg:text-4xl text-2xl font-black text-center mx-16  py-2 lg:py-4 rounded-3xl shadow-md  bg-green-200 top-1">
+                Recent Donation History:</h1>
 
             <div class=" border border-gray-100 p-3 lg:p-6 rounded-xl  mt-4"> <!-- headings -->
                 <h1 class="text-[20px] font-bold "> 100 Taka is Donated for GAZA.</h1>
@@ -314,14 +302,16 @@
 
     <!-- Modal -->
     <dialog id="my_modal_5" class="modal modal-middle">
-        <div style="border-left: 5px solid rgb(197, 0, 197); border-right: 5px solid rgb(13, 0, 197);" class="modal-box text-center w-fit h-fit px-8 lg:px-20">
+        <div style="border-left: 5px solid rgb(197, 0, 197); border-right: 5px solid rgb(13, 0, 197);"
+            class="modal-box text-center w-fit h-fit px-8 lg:px-20">
             <h3 class="font-black text-xl lg:text-3xl">Congratulations!</h3>
             <img class="mx-auto mt-4" src="./assets/coin.png" alt="">
             <p class="lg:py-2">You Have Donated For Humankind</p>
             <p class="lg:py-1 lg:text-2xl text-lg font-bold">Successfully</p>
             <div class="modal-action w-full">
                 <form method="dialog">
-                    <button class="btn bg-gradient-to-r to-blue-600 from-purple-600 text-white -ml-[55%]">Close Confirmation</button>
+                    <button class="btn bg-gradient-to-r to-blue-600 from-purple-600 text-white -ml-[55%]">Close
+                        Confirmation</button>
                 </form>
             </div>
         </div>

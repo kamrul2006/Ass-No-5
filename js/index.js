@@ -7,7 +7,7 @@ DonetNoakhali.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const moneyToAdd = GetValue('NoaInput')
+    const moneyToAdd = GetPFValue('NoaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -33,8 +33,8 @@ DonetNoakhali.addEventListener('click', function (event) {
         console.log(NoaBall)
 
         // Update ball:
-        document.getElementById('MyMoney').innerText = NewBall
-        document.getElementById('NoaMoney').innerText = NoaBall
+        document.getElementById('MyMoney').innerText = NewBall.toFixed(2)
+        document.getElementById('NoaMoney').innerText = NoaBall.toFixed(2)
 
         document.getElementById('my_modal_5').showModal();
     }
@@ -71,7 +71,7 @@ DonetFeni.addEventListener('click', function (event) {
 
     // get money for donation ,
 
-    const moneyToAdd = GetValue('FeniInput');
+    const moneyToAdd = GetPFValue('FeniInput');
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -94,8 +94,8 @@ DonetFeni.addEventListener('click', function (event) {
         const FeniBall = Feni_Money + moneyToAdd
 
         // Update ball:
-        document.getElementById('MyMoney').innerText = NewBall
-        document.getElementById('FeniMoney').innerText = FeniBall
+        document.getElementById('MyMoney').innerText = NewBall.toFixed(2)
+        document.getElementById('FeniMoney').innerText = FeniBall.toFixed(2)
 
         document.getElementById('my_modal_5').showModal();
     }
@@ -132,7 +132,7 @@ DonetQU.addEventListener('click', function (event) {
 
     // get money for donation ,
 
-    const moneyToAdd = GetValue('QInput');
+    const moneyToAdd = GetPFValue('QInput');
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -156,8 +156,8 @@ DonetQU.addEventListener('click', function (event) {
         const QBall = Q_Money + moneyToAdd
 
         // Update ball:
-        document.getElementById('MyMoney').innerText = NewBall
-        document.getElementById('QMoney').innerText = QBall
+        document.getElementById('MyMoney').innerText = NewBall.toFixed(2)
+        document.getElementById('QMoney').innerText = QBall.toFixed(2)
 
         document.getElementById('my_modal_5').showModal();
     }
@@ -192,7 +192,7 @@ DonetGaza.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const moneyToAdd = GetValue('GazaInput')
+    const moneyToAdd = GetPFValue('GazaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
@@ -215,8 +215,8 @@ DonetGaza.addEventListener('click', function (event) {
         const GazaBall = Gaza_Money + moneyToAdd
 
         // Update ball:
-        document.getElementById('MyMoney').innerText = NewBall
-        document.getElementById('GazaMoney').innerText = GazaBall
+        document.getElementById('MyMoney').innerText = NewBall.toFixed(2)
+        document.getElementById('GazaMoney').innerText = GazaBall.toFixed(2)
 
         document.getElementById('my_modal_5').showModal();
     }

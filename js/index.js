@@ -7,14 +7,21 @@ DonetNoakhali.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const moneyToAdd  = GetValue('NoaInput')
+    const moneyToAdd = GetValue('NoaInput')
+    const cb = GetText('MyMoney')
+    const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (typeof moneyToAdd === 'number') {
+
+    if (moneyToAdd < 1) {
+        alert('Pleas Enter Valid Amount !!!')
+        return;
+    }
+
+    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
 
         // get the current ball:
-        const cb = GetText('MyMoney')
-        const My_Money = parseFloat(cb)
+
         const nb = GetText('NoaMoney')
         const Noa_Money = parseFloat(nb)
 
@@ -30,12 +37,9 @@ DonetNoakhali.addEventListener('click', function (event) {
 
     }
 
-    else if (moneyToAdd < 0){
-        alert('Pleas Enter Valid Amount !!!')
-    }
-
-    else {
+    else if (moneyToAdd > My_Money) {
         alert('You Do not have enough money .')
+        return;
     }
 
     const time = new Date();
@@ -55,7 +59,7 @@ DonetNoakhali.addEventListener('click', function (event) {
 })
 
 
-//  function For DOnate Noakhali:
+//  function For DOnate Feni:
 
 const DonetFeni = document.getElementById('DFeni')
 DonetFeni.addEventListener('click', function (event) {
@@ -65,15 +69,20 @@ DonetFeni.addEventListener('click', function (event) {
 
     // get money for donation ,
 
-    const moneyToAdd =GetValue('FeniInput') ;
-
+    const moneyToAdd = GetPFValue('FeniInput');
+    const cb = GetText('MyMoney')
+    const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (typeof moneyToAdd === 'number') {
+    if (moneyToAdd < 1) {
+        alert('Pleas Enter Valid Amount !!!')
+        return;
+    }
+
+    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
 
         // get the current ball:
-        const cb = GetText('MyMoney')
-        const My_Money = parseFloat(cb)
+
         const nb = GetText('FeniMoney')
         const Feni_Money = parseFloat(nb)
 
@@ -89,12 +98,9 @@ DonetFeni.addEventListener('click', function (event) {
 
     }
 
-    else if (moneyToAdd < 0){
-        alert('Pleas Enter Valid Amount !!!')
-    }
-
-    else {
+    else if (moneyToAdd > My_Money) {
         alert('You Do not have enough money .')
+        return;
     }
 
     const time = new Date();
@@ -123,16 +129,22 @@ DonetQU.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const addMonyInput = GetValue('QInput')
-    const moneyToAdd = parseFloat(addMonyInput);
 
+    const moneyToAdd = GetPFValue('QInput');
+    const cb = GetText('MyMoney')
+    const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (typeof moneyToAdd === 'number') {
+
+    if (moneyToAdd < 1) {
+        alert('Pleas Enter Valid Amount !!!')
+        return;
+    }
+
+    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
 
         // get the current ball:
-        const cb = GetText('MyMoney')
-        const My_Money = parseFloat(cb)
+
         const nb = GetText('QMoney')
         const Q_Money = parseFloat(nb)
 
@@ -148,12 +160,9 @@ DonetQU.addEventListener('click', function (event) {
 
     }
 
-    else if (moneyToAdd < 0){
-        alert('Pleas Enter Valid Amount !!!')
-    }
-
-    else {
-        alert('Pleas enter some money .')
+    else if (moneyToAdd > My_Money) {
+        alert('You Do not have enough money .')
+        return;
     }
     const time = new Date();
     const div = document.createElement('div');
@@ -181,14 +190,17 @@ DonetGaza.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-    const addMonyInput = GetValue('GazaInput')
-    // const moneyToAdd = parseFloat(addMonyInput);
-    const moneyToAdd = addMonyInput
+    const moneyToAdd = GetPFValue('GazaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
+    if (moneyToAdd < 1) {
+        alert('Pleas Enter Valid Amount !!!')
+        return;
+    }
+
+    else if (typeof moneyToAdd === 'number' && moneyToAdd <= My_Money) {
 
         // get the current ball:
 
@@ -207,12 +219,9 @@ DonetGaza.addEventListener('click', function (event) {
 
     }
 
-    else if (moneyToAdd < 0){
-        alert('Pleas Enter Valid Amount !!!')
-    }
-
-    else {
-        alert('Pleas enter some money .')
+    else if (moneyToAdd > My_Money) {
+        alert('You Do not have enough money .')
+        return;
     }
 
     const time = new Date();

@@ -14,12 +14,12 @@ DonetNoakhali.addEventListener('click', function (event) {
 
     // donation of money: )
 
-    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
+    if (moneyToAdd1 < 1 / 9 && Number.moneyToAdd1 !== true) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
 
-    else if (moneyToAdd <= My_Money  ) {
+    else if (moneyToAdd <= My_Money) {
 
         // get the current ball:
 
@@ -46,6 +46,7 @@ DonetNoakhali.addEventListener('click', function (event) {
     }
 
     const time = new Date();
+
     const div = document.createElement('div');
     div.innerHTML = `
                 <div class=" border border-orange-300 p-3 lg:p-6 rounded-xl  mt-4">
@@ -58,7 +59,10 @@ DonetNoakhali.addEventListener('click', function (event) {
                 </div>
     `;
 
-    document.getElementById('History-Window').appendChild(div)
+    GetId('History-Window').appendChild(div)
+
+    const EmptyHistory = GetId('hist')
+    EmptyHistory.classList.add("hidden")
 })
 
 
@@ -78,7 +82,7 @@ DonetFeni.addEventListener('click', function (event) {
 
     // donation of money: )
 
-    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
+    if (moneyToAdd1 < 1 / 9 && Number.moneyToAdd1 !== true) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
@@ -120,7 +124,10 @@ DonetFeni.addEventListener('click', function (event) {
                 </div>
     `;
 
-    document.getElementById('History-Window').appendChild(div)
+    GetId('History-Window').appendChild(div)
+
+    const EmptyHistory = GetId('hist')
+    EmptyHistory.classList.add("hidden")
 })
 
 
@@ -140,7 +147,7 @@ DonetQU.addEventListener('click', function (event) {
 
     // donation of money: )
 
-    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
+    if (moneyToAdd1 < 1 / 9 && Number.moneyToAdd1 !== true) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
@@ -181,7 +188,10 @@ DonetQU.addEventListener('click', function (event) {
                 </div>
     `;
 
-    document.getElementById('History-Window').appendChild(div)
+    GetId('History-Window').appendChild(div)
+
+    const EmptyHistory = GetId('hist')
+    EmptyHistory.classList.add("hidden")
 })
 
 
@@ -201,7 +211,7 @@ DonetGaza.addEventListener('click', function (event) {
 
     // donation of money: )
 
-    if (moneyToAdd1 < 1 && Number.moneyToAdd1 !== true ) {
+    if (moneyToAdd1 < 1 && Number.moneyToAdd1 !== true) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
@@ -243,6 +253,10 @@ DonetGaza.addEventListener('click', function (event) {
                 </div>
     `;
 
-    document.getElementById('History-Window').appendChild(div)
+    GetId('History-Window').appendChild(div)
+
+    const EmptyHistory = GetId('hist')
+    EmptyHistory.classList.add("hidden")
+
 })
 

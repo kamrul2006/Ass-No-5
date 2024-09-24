@@ -19,11 +19,11 @@
 
 </head>
 
-<body>
+<body class="bg-slate-100">
 
     <header class=" lg:sticky top-[-18px] ">
         <nav
-            class="flex justify-between items-center px-3 lg:px-32 py-2 lg:py-8 font-bold lg:text-lg bg-[#ffffffda] mx-4 mt-2 rounded-3xl border border-gray-400">
+            class="flex justify-between items-center px-3 lg:px-32 py-2 lg:py-8 font-bold lg:text-lg bg-white/50 mx-4 mt-2 rounded-3xl border backdrop-blur-sm border-gray-400">
 
             <!--                                Home                          -->
 
@@ -44,11 +44,10 @@
 
             <!--                              Money                              -->
 
-
             <div
-                class="lg:flex lg:bg-white p-2 rounded-2xl lg:border-x-4 border-x-green-500 lg:shadow-md justify-between items-center gap-3">
+                class="lg:flex lg:bg-green-100 p-2 rounded-2xl lg:border lg:border-x-4 border-x-green-500 lg:shadow-md justify-between items-center gap-3">
                 <img class="mx-auto" src="./assets/coin.png" alt="">
-                <h1 class="text-zinc-500"> <span id="MyMoney">10000</span> BDT</h1>
+                <h1 class="text-zinc-500"> <span class="font-mono lg:text-2xl" id="MyMoney">10000.00</span> BDT</h1>
             </div>
 
         </nav>
@@ -56,7 +55,8 @@
 
     <main class="my-4">
 
-        <div class=" mx-auto flex items-center  gap-2 justify-center bg-red-200 px-4 py-2 rounded-3xl w-fit">
+        <div
+            class=" mx-auto flex items-center border border-x-4 border-x-green-500 shadow-lg gap-2 justify-center bg-green-100 px-4 py-2 rounded-xl w-fit">
             <img class="w-7 lg:w-auto" src="./assets/fq.png" alt="">
             <h1 class="lg:text-3xl text-lg font-bold text-center">Important F&Q</h1>
             <img class="w-7 lg:w-auto" src="./assets/fq.png" alt="">

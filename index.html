@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body class="bg-slate-200">
     <header class=" sticky top-[-20px] bg-white/10 backdrop-blur-sm  pb-4">
         <nav
             class="flex justify-between items-center px-3 lg:px-32 py-2 lg:py-8 font-bold lg:text-lg bg-[#ffffffda] mx-4 mt-2 rounded-3xl border border-gray-400">
@@ -28,7 +28,7 @@
 
             <a href="./blog.html">
                 <button
-                    class="btn bg-gradient-to-r from-blue-600 to-purple-600 lg:w-28 lg:text-lg text-white ">Blog</button>
+                    class="btn bg-gradient-to-r from-[#f80] to-[#f22] lg:w-28 lg:text-lg text-white ">Blog</button>
             </a>
 
             <!--                               logo                              -->
@@ -43,7 +43,7 @@
 
             <!--                              Money                              -->
 
-            <div class="lg:flex justify-between items-center gap-3">
+            <div class="lg:flex lg:bg-white p-2 rounded-2xl lg:border lg:border-x-4 border-x-green-500 lg:shadow-md justify-between items-center gap-3">
                 <img class="mx-auto" src="./assets/coin.png" alt="">
                 <h1 class="text-zinc-500"> <span id="MyMoney">10000</span> BDT</h1>
             </div>
@@ -55,9 +55,9 @@
         <div class=" justify-center flex gap-3 lg:gap-10 mt-4 lg:mt-8">
 
             <button id="btn-donation"
-                class="btn bg-gradient-to-r from-blue-600 to-purple-600 lg:w-28 lg:text-lg text-white ">Donation</button>
+                class="btn bg-gradient-to-r from-blue-600 to-purple-600 lg:w-28 lg:text-lg text-white font-serif">Donation</button>
 
-            <button id="btn-history" class="btn btn-active px-3  lg:px-10 ">History</button>
+            <button id="btn-history" class="btn px-3  lg:px-10 ">History</button>
         </div>
     </header>
 
@@ -272,14 +272,14 @@
 
         <!--         ----------------------------------------------  Html for history -----------------------------------------------         -->
         <section id="History-Window"
-            class="hidden rounded-3xl mt-28 border-x-8 border border-x-green-600 py-4 px-2 lg:px-8">
+            class="hidden rounded-3xl mt-28 border-x-8 border border-x-green-600 bg-green-50 py-4 px-2 lg:px-8">
 
             <h1
                 class="lg:text-4xl text-2xl font-black text-center mx-16  py-2 lg:py-4 rounded-3xl shadow-md  bg-green-200 top-1">
                 Recent Donation History:</h1>
 
             <div id="hist" class=" border border-gray-100 p-3 lg:p-6 rounded-xl  mt-4"> <!-- headings -->
-                <h1 class="text-[20px] font-bold text-center lg:text-2xl font-black ">No Recent History Was Found.</h1>
+                <h1 class="text-[20px] text-gray-500 font-bold text-center lg:text-2xl lg:font-black ">No Recent History Was Found.</h1>
                 <img src="./assets/empty.png" class="w-[40%] mx-auto">
                 <p  class="mt-4 text-[16px] text-gray-500 font-serif text-center">
                     Please Donate Some Fund for Humankind!
@@ -292,8 +292,8 @@
 
 
     <!--                   footer                  -->
-    <footer class="h-36 bg-gray-200">
-
+    <footer class="h-36 bg-white/80">
+        <p class="text-center pt-[60px] font-bold text-stone-500 italic">Copyright © 2024 Donate Bangladesh Inc.</p>
     </footer>
 
     <!-- JAvascript -->
@@ -305,8 +305,8 @@
     <dialog id="my_modal_5" class="modal modal-middle">
         <div style="border-left: 5px solid rgb(197, 0, 197); border-right: 5px solid rgb(13, 0, 197);"
             class="modal-box text-center w-fit h-fit px-8 lg:px-20">
-            <h3 class="font-black text-xl lg:text-3xl">Congratulations!</h3>
-            <img class="mx-auto mt-4" src="./assets/coin.png" alt="">
+            <img class="mx-auto w-36 lg:w-48 " src="./assets/Cogra.png" alt="">
+            <img class="mx-auto w-10" src="./assets/mdl.png" alt="">
             <p class="lg:py-2">You Have Donated For Humankind</p>
             <p class="lg:py-1 lg:text-2xl text-lg font-bold">Successfully</p>
             <div class="modal-action w-full">
@@ -317,6 +317,7 @@
             </div>
         </div>
     </dialog>
+
 
 </body>
 

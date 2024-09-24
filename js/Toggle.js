@@ -8,7 +8,9 @@ HistoryTab.addEventListener('click', function () {
         "to-purple-600",
         "lg:w-28",
         "lg:text-lg",
-        "text-white"
+        "text-white",
+        "font-serif"
+
     );
 
     GetId('History-Window').classList.remove("hidden")
@@ -20,7 +22,8 @@ HistoryTab.addEventListener('click', function () {
         "to-purple-600",
         "lg:w-28",
         "lg:text-lg",
-        "text-white"
+        "text-white",
+        "font-serif"
     );
 
 
@@ -37,7 +40,8 @@ DonationTab.addEventListener('click', function () {
         "to-purple-600",
         "lg:w-28",
         "lg:text-lg",
-        "text-white"
+        "text-white",
+        "font-serif"
     );
 
     GetId('History-Window').classList.add("hidden")
@@ -49,8 +53,8 @@ DonationTab.addEventListener('click', function () {
         "to-purple-600",
         "lg:w-28",
         "lg:text-lg",
-        "text-white"
-    );
+        "text-white",
+        "font-serif");
 
 
 })

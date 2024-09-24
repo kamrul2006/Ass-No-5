@@ -7,19 +7,20 @@ DonetNoakhali.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
+    const moneyToAdd1 = GetValue('NoaInput')
     const moneyToAdd = GetPFValue('NoaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
     // donation of money: )
 
-    if (moneyToAdd < 1) {
+    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
 
-    else if (moneyToAdd <= My_Money) {
-        console.log('hello')
+    else if (moneyToAdd <= My_Money  ) {
+
         // get the current ball:
 
         const nb = GetText('NoaMoney')
@@ -70,13 +71,14 @@ DonetFeni.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-
-    const moneyToAdd = GetPFValue('FeniInput');
+    const moneyToAdd1 = GetValue('FeniInput')
+    const moneyToAdd = GetPFValue('FeniInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (moneyToAdd < 1) {
+
+    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
@@ -131,14 +133,14 @@ DonetQU.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
-
-    const moneyToAdd = GetPFValue('QInput');
+    const moneyToAdd1 = GetValue('QInput')
+    const moneyToAdd = GetPFValue('QInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
     // donation of money: )
 
-    if (moneyToAdd < 1) {
+    if (moneyToAdd1 < 1/9 && Number.moneyToAdd1 !== true ) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
@@ -192,12 +194,14 @@ DonetGaza.addEventListener('click', function (event) {
     event.preventDefault();
 
     // get money for donation ,
+    const moneyToAdd1 = GetValue('GazaInput')
     const moneyToAdd = GetPFValue('GazaInput')
     const cb = GetText('MyMoney')
     const My_Money = parseFloat(cb)
 
     // donation of money: )
-    if (moneyToAdd < 1) {
+
+    if (moneyToAdd1 < 1 && Number.moneyToAdd1 !== true ) {
         alert('Pleas Enter Valid Amount !!!')
         return;
     }
